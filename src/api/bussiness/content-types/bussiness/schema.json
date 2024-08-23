@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bussinesses",
+  "info": {
+    "singularName": "bussiness",
+    "pluralName": "bussinesses",
+    "displayName": "Bussiness"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nit": {
+      "type": "text"
+    },
+    "aboutThey": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Contacs": {
+      "type": "text"
+    }
+  }
+}

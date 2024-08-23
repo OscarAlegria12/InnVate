@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hackatoons",
+  "info": {
+    "singularName": "hackatoon",
+    "pluralName": "hackatoons",
+    "displayName": "Hackatoon"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NameHackatoon": {
+      "type": "text"
+    },
+    "DescriptionHackatoon": {
+      "type": "text"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "ProblemToSolve": {
+      "type": "text"
+    },
+    "Prize": {
+      "type": "decimal"
+    },
+    "HackatoonPicture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

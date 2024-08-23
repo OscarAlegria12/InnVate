@@ -1,0 +1,152 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #333;
+    color: #333;
+}
+
+header {
+    background-color: #fff; /* Color de fondo blanco para el header */
+    color: #333; /* Color de texto negro para el header */
+    padding: 1rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-height: 50px; /* Ajusta según sea necesario */
+    width: auto;
+}
+
+nav {
+    flex: 1;
+    margin-left: 2rem; /* Espacio entre el logo y el menú */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra el menú */
+    gap: 1.5rem; /* Espacio entre los elementos del menú */
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: #000; /* Color negro para los enlaces del nav */
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff; /* Color blanco para el texto al pasar el ratón */
+    background: linear-gradient(to right, rgb(75, 255, 59), #4985ff); /* Degradado rojo a negro */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    display: none;
+    background-color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.search-button svg {
+    fill: #000; /* Color negro para la lupa */
+}
+
+.search-container.active .search {
+    display: inline-block;
+}
+
+.hero {
+    background-color: #333; /* Color gris para el fondo del hero */
+    padding: 4rem 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff; /* Color blanco para el texto del h1 */
+}
+
+p {
+    line-height: 1.6;
+    color: #fff; /* Color blanco para el texto del párrafo */
+}
+
+.button {
+    display: inline-block;
+    background-color: #fff;
+    color: #000; /* Texto blanco para el botón */
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: #fff;
+}
+
+.featured {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.featured-item {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.featured-item:last-child {
+    margin-right: 0;
+}
+
+.featured-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
