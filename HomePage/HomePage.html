@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="container">
-            <img src="/HomePage/Img/LogoInnVateBg.png" class="logo">
+            <img src="/HomePage/Img/LogoInnVateBg.png" class="logo" alt="InnVate Logo">
             <nav>
                 <ul>
                     <li><a href="/HomePage/HomePage.html">Home</a></li>
@@ -24,9 +24,20 @@
                 </ul>
             </nav>
             <div class="search-container">
-                <button class="search-button">
-                    <svg width="24" height="24" fill="#000" xmlns="http://www.w3.org/2000/svg"><path d="M11 2a9 9 0 0 1 7.1 14.7l5.1 5.1-1.4 1.4-5.1-5.1A9 9 0 1 1 11 2Zm0 2a7 7 0 1 0 0 14 7 7 0 0 0 0-14Z"/></svg>
+                <button class="profile-button" onclick="toggleMenu()">
+                    <i class='bx bx-user-circle'></i>
                 </button>
+                <div id="profile-menu" class="profile-menu">
+                    <div class="profile-header">
+                        <img src="/HomePage/Img/user-profile.png" class="profile-logo" alt="User Profile">
+                        <span class="profile-name">User Name</span>
+                    </div>
+                    <div class="profile-links">
+                        <a href="#"><i class='bx bx-cog'></i> Settings & Privacy</a>
+                        <a href="#"><i class='bx bx-help-circle'></i> Help & Support</a>
+                        <a href="#"><i class='bx bx-log-out'></i> Logout</a>
+                    </div>
+                </div>
                 <input type="text" class="search" placeholder="Search...">
             </div>
         </div>
@@ -63,7 +74,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 One Page Website Inspiration. All rights reserved.</p>
+            <p>&copy; 2023 InnVate. All rights reserved.</p>
         </div>
     </footer>
     <script src="script.js"></script>
